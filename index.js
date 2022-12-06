@@ -5,6 +5,7 @@ var cors = require("cors");
 // Importin routes
 const userRoute = require("./app/routes/User");
 const customerSupportRoute = require("./app/routes/CustomerSupport");
+const watchlistRoute = require("./app/routes/Watchlist");
 
 const PORT = 5000;
 const app = express();
@@ -16,6 +17,7 @@ app.use(cors({ origin: true, credentials: true }));
 
 app.use("/user", userRoute);
 app.use("/customersupport", customerSupportRoute)
+app.use("/watchlist", watchlistRoute)
 
 mongoose
   .connect(url)
