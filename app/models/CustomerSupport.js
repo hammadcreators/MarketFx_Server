@@ -23,5 +23,4 @@ const CustomerSupportSchema = new mongoose.Schema({
 
 });
 
-const Package = mongoose.model("CustomerSupport", CustomerSupportSchema);
-module.exports = CustomerSupport;
+module.exports = mongoose.model("CustomerSupport", CustomerSupportSchema);
