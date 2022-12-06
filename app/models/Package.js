@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const packageSchema = new mongoose.Schema({
+    
     // name price, description duration 
 
     name: {
